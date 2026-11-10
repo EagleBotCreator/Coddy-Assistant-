@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coddy"
+version = "0.1.0"
+description = "Conversational data analyst agent for CSV files from Google Drive"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.scripts]
+coddy = "coddy.__main__:main"
